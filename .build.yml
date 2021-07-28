@@ -1,0 +1,10 @@
+image: alpine/latest
+oauth: pages.sr.ht/PAGES:RW
+environment:
+  site: dhruvin.dev
+tasks:
+- package: |
+    cd $site
+    tar -cvz index.html > ../site.tar.gz
+- upload: |
+    acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
