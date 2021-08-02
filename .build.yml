@@ -1,10 +1,14 @@
 image: alpine/latest
+packages:
+- emacs
+- nodejs
+artifacts:
+- dhruvin.dev/dist/site.tar.gz
 oauth: pages.sr.ht/PAGES:RW
-environment:
-  site: dhruvin.dev
+secrets:
+- 3f86623d-8605-4062-8a6f-6a395a96fff5
 tasks:
-- package: |
-    cd $site
-    tar -cvz index.html > ../site.tar.gz
-- upload: |
-    acurl -f https://pages.sr.ht/publish/$site -Fcontent=@site.tar.gz
+- deps: cd dhruvin.dev && npm ci
+- build: cd dhruvin.dev && make
+- publish: cd dhruvin.dev && make publish
+- pin: cd dhruvin.dev && DOTENV_CONFIG_PATH=~/.env make pin

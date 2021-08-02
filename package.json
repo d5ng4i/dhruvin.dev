@@ -1,0 +1,21 @@
+{
+    "name": "dhruvin.dev",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Dhruvin's Website",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://git.sr.ht/~dhruvin/dhruvin.dev"
+    },
+    "author": "Dhruvin Gandhi <contact@dhruvin.dev>",
+    "license": "GPL-3.0-or-later",
+    "devDependencies": {
+        "@pinata/sdk": "^1.1.23",
+        "axios": "^0.21.1",
+        "dotenv": "^10.0.0"
+    },
+    "dependencies": {}
+}
