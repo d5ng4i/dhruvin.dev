@@ -2,6 +2,7 @@ image: alpine/latest
 packages:
 - emacs
 - nodejs
+- npm
 artifacts:
 - dhruvin.dev/dist/site.tar.gz
 oauth: pages.sr.ht/PAGES:RW
