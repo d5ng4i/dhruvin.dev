@@ -9,7 +9,16 @@ oauth: pages.sr.ht/PAGES:RW
 secrets:
 - 3f86623d-8605-4062-8a6f-6a395a96fff5
 tasks:
-- deps: cd dhruvin.dev && npm ci
-- build: cd dhruvin.dev && make
-- publish: cd dhruvin.dev && make publish
-- pin: cd dhruvin.dev && DOTENV_CONFIG_PATH=~/.env make pin
+- deps: |
+    cd dhruvin.dev
+    npm ci
+- build: |
+    cd dhruvin.dev
+    make
+- publish: |
+    cd dhruvin.dev
+    make package
+    acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@dist/site.tar.gz
+- pin: |
+    cd dhruvin.dev
+    DOTENV_CONFIG_PATH=~/.env make pin
