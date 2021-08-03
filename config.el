@@ -5,6 +5,8 @@
 ;;; Code:
 
 (require 'ox-html)
+(require 'ox-gemini)
+
 (setq org-html-doctype "html5"
       org-html-preamble nil
       org-html-postamble nil)

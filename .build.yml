@@ -14,11 +14,12 @@ tasks:
     npm ci
 - build: |
     cd dhruvin.dev
-    make
+    CAPSULE_BUILD_FLAGS="-l ../deps.el" make build
 - publish: |
     cd dhruvin.dev
     make package
-    acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@dist/site.tar.gz
+    acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@dist/site.tar.gz -Fprotocol=HTTPS
+    acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@dist/capsule.tar.gz -Fprotocol=GEMINI
 - pin: |
     cd dhruvin.dev
     DOTENV_CONFIG_PATH=~/.env make pin

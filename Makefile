@@ -1,21 +1,32 @@
-.PHONY : build package pin mkdirs clean
+.PHONY : build build/site build/capsule package pin mkdirs clean
 
-build : mkdirs build/index.html
+build : mkdirs build/site build/capsule
 
-build/index.html : config.el src/index.org
-	emacs src/index.org -Q --batch -l ../config.el -f org-html-export-to-html --kill
-	mv src/index.html build/index.html
+build/site : build/site/index.html
 
-package : dist/site.tar.gz
+build/site/index.html : config.el src/index.org
+	emacs src/index.org -Q --batch $(SITE_BUILD_FLAGS) -l ../config.el -f org-html-export-to-html --kill
+	mv src/index.html $@
 
-dist/site.tar.gz : build/index.html
-	cd build && tar -zvc . > ../dist/site.tar.gz
+build/capsule : build/capsule/index.gmi
+
+build/capsule/index.gmi : config.el src/index.org
+	emacs src/index.org -Q --batch $(CAPSULE_BUILD_FLAGS) -l ../config.el -f org-gemini-export-to-file --kill
+	mv src/index.gmi $@
+
+package : build/site.tar.gz build/capsule.tar.gz
+
+build/site.tar.gz : build/site
+	cd build/site && tar -zvc . > ../site.tar.gz
+
+build/capsule.tar.gz : build/capsule
+	cd build/capsule && tar -zvc . > ../capsule.tar.gz
 
 pin : build
 	node -r dotenv/config pin.js
 
 mkdirs :
-	@mkdir -p build dist
+	@mkdir -p build/site build/capsule
 
 clean :
-	rm -rf build dist
+	rm -rf build
