@@ -14,7 +14,7 @@ tasks:
     npm ci
 - build: |
     cd dhruvin.dev
-    CAPSULE_BUILD_FLAGS="-l ../deps.el" make build
+    BUILD_FLAGS="-l ../deps.el" make build
 - publish: |
     cd dhruvin.dev
     make package

@@ -5,13 +5,13 @@ build : mkdirs build/site build/capsule
 build/site : build/site/index.html
 
 build/site/index.html : config.el src/index.org
-	emacs src/index.org -Q --batch $(SITE_BUILD_FLAGS) -l ../config.el -f org-html-export-to-html --kill
+	emacs src/index.org -Q --batch $(BUILD_FLAGS) -l ../config.el -f org-html-export-to-html --kill
 	mv src/index.html $@
 
 build/capsule : build/capsule/index.gmi
 
 build/capsule/index.gmi : config.el src/index.org
-	emacs src/index.org -Q --batch $(CAPSULE_BUILD_FLAGS) -l ../config.el -f org-gemini-export-to-file --kill
+	emacs src/index.org -Q --batch $(BUILD_FLAGS) -l ../config.el -f org-gemini-export-to-file --kill
 	mv src/index.gmi $@
 
 package : build/site.tar.gz build/capsule.tar.gz
