@@ -4,7 +4,8 @@ packages:
 - nodejs
 - npm
 artifacts:
-- dhruvin.dev/dist/site.tar.gz
+- dhruvin.dev/build/site.tar.gz
+- dhruvin.dev/build/capsule.tar.gz
 oauth: pages.sr.ht/PAGES:RW
 secrets:
 - 3f86623d-8605-4062-8a6f-6a395a96fff5
@@ -18,8 +19,8 @@ tasks:
 - publish: |
     cd dhruvin.dev
     make package
-    acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@dist/site.tar.gz -Fprotocol=HTTPS
-    acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@dist/capsule.tar.gz -Fprotocol=GEMINI
+    acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@build/site.tar.gz -Fprotocol=HTTPS
+    acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@build/capsule.tar.gz -Fprotocol=GEMINI
 - pin: |
     cd dhruvin.dev
     DOTENV_CONFIG_PATH=~/.env make pin
