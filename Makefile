@@ -2,8 +2,8 @@
 
 build : mkdirs build/index.html
 
-build/index.html : src/index.org
-	emacs src/index.org -Q --batch -f org-html-export-to-html --kill && \
+build/index.html : config.el src/index.org
+	emacs src/index.org -Q --batch -l ../config.el -f org-html-export-to-html --kill
 	mv src/index.html build/index.html
 
 package : dist/site.tar.gz
