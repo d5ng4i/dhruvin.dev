@@ -6,7 +6,7 @@ const pinata = pinataSDK(
     process.env.PINATA_API_SECRET
 )
 
-pinata.pinFromFS('build', {
+pinata.pinFromFS('build/site', {
     pinataMetadata: {
 	name: 'dhruvin.dev',
 	keyvalues: Object.fromEntries(
@@ -20,17 +20,17 @@ pinata.pinFromFS('build', {
     },
     pinataOptions: { cidVersion: 1 }
 }).then(({IpfsHash}) => {
-    console.info('[pinata]', `Pinned ${IpfsHash}`)
+    console.info('[pinata]', `Pinned /ipfs/${IpfsHash}`)
     axios({
 	method: 'PATCH',
 	baseURL: 'https://api.digitalocean.com/v2',
-	url: `/domains/dhruvin.dev/records/${process.env.DOMAIN_RECORD_ID}`,
+	url: `/domains/_dnslink.dhruvin.dev/records/${process.env.DOMAIN_RECORD_ID}`,
 	headers: {
 	    'Authorization': `Bearer ${process.env.DIGITALOCEAN_TOKEN}`
 	},
 	data: {
 	    type: 'TXT',
-	    name: '_dnslink',
+	    name: '@',
 	    data: `dnslink=/ipfs/${IpfsHash}`
 	}
     }).then(() => {
