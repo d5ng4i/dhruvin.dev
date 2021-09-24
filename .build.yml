@@ -1,8 +1,4 @@
-image: alpine/latest
-packages:
-- emacs
-- nodejs
-- npm
+image: guix
 artifacts:
 - dhruvin.dev/build/site.tar.gz
 - dhruvin.dev/build/capsule.tar.gz
@@ -12,10 +8,11 @@ secrets:
 tasks:
 - deps: |
     cd dhruvin.dev
+    guix package -v0 -m manifest.scm
     npm ci
 - build: |
     cd dhruvin.dev
-    BUILD_FLAGS="-l ../deps.el" make build
+    make build
 - publish: |
     cd dhruvin.dev
     make package
