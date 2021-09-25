@@ -1,5 +1,5 @@
 (specifications->manifest
- '("emacs"
+ '("emacs-minimal"
    "emacs-ox-gemini"
    "make"
    "node"))
