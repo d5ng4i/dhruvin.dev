@@ -9,7 +9,9 @@
 
 (setq org-html-doctype "html5"
       org-html-preamble nil
-      org-html-postamble nil)
+      org-html-postamble nil
+      org-export-with-section-numbers nil
+      org-export-with-toc nil)
 
 (provide 'config)
 
