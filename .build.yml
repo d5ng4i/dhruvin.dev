@@ -4,7 +4,7 @@ artifacts:
 - dhruvin.dev/build/capsule.tar.gz
 oauth: pages.sr.ht/PAGES:RW
 secrets:
-- fe9f74ab-d0ee-463f-8745-94a703ecaaa5
+- 719d119c-d290-4ae6-9e65-e6d7631edc2a
 tasks:
 - deps: |
     cd dhruvin.dev
