@@ -2,40 +2,55 @@
 #+subtitle: Free Software Developer
 
 * About
+:properties:
+:custom_id: about
+:end:
 
 Hello! I'm Dhruvin Gandhi. I live in Bangalore, India.
 
 * Work
+:properties:
+:custom_id: work
+:end:
 
-I develop and contribute to free, libre, and open source software
-exclusively.
+I develop and contribute to free, libre, and open source software exclusively.
 
-A significant part of my day goes into research.  I am interested in
-projects that require systematic software development[fn:1].
+A significant part of my day goes into research.  I am interested in projects
+that require systematic software development[fn:1].
 
 Contact me via email if you would like to discuss about FLOSS work
 opportunities.
 
 * Life
+:properties:
+:custom_id: life
+:end:
 
 I am [[https://dixita.dev][Dixita]]'s husband.
 
-I am an atheist.  I believe in equality[fn:2].  I value honesty.  I
-enjoy music.
+I am an atheist.  I believe in equality[fn:2].  I value honesty.  I enjoy music.
 
 * Projects
+:properties:
+:custom_id: projects
+:end:
 
 I host my projects on [[https://sr.ht/~dhruvin][sourcehut]].
 
 * TODO Blog
+:properties:
+:custom_id: blog
+:end:
 
-I'll soon[fn:3] write about topics that are related to my work or my
-life.
+I'll soon[fn:3] write about topics that are related to my work or my life.
 
 * Contact
+:properties:
+:custom_id: contact
+:end:
 
-You can contact me via [[mailto:contact@dhruvin.dev][email]], [[https://matrix.to/#/@dhruvin:matrix.org][matrix]], or [[https://fosstodon.org/@dhruvin][mastodon]].  You can locate my
-[[https://keys.openpgp.org/vks/v1/by-fingerprint/E4155859F84534211511C3E8F34B15C27B4C5C16][public key]] via wkd.
+You can contact me via [[mailto:contact@dhruvin.dev][email]], [[https://matrix.to/#/@dhruvin:matrix.org][matrix]], or [[https://fosstodon.org/@dhruvin][mastodon]].  You can locate my [[https://keys.openpgp.org/vks/v1/by-fingerprint/E4155859F84534211511C3E8F34B15C27B4C5C16][public-key]]
+via wkd.
 
 * Footnotes
 
