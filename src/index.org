@@ -52,6 +52,13 @@ I'll soon[fn:3] write about topics that are related to my work or my life.
 You can contact me via [[mailto:contact@dhruvin.dev][email]], [[https://matrix.to/#/@dhruvin:matrix.org][matrix]], or [[https://fosstodon.org/@dhruvin][mastodon]].  You can locate my [[https://keys.openpgp.org/vks/v1/by-fingerprint/E4155859F84534211511C3E8F34B15C27B4C5C16][public-key]]
 via WKD.
 
+* Elsewhere
+:PROPERTIES:
+:custom_id: elsewhere
+:END:
+
+You can also access this information using [[gemini://dhruvin.dev][gemini]], [[https://dhruvin.dev][https]], or [[ipns://dhruvin.dev][ipfs]].
+
 * Footnotes
 
 [fn:1] I am not interested in moving fast and breaking things.
