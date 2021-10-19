@@ -6,7 +6,7 @@
 :custom_id: about
 :end:
 
-Hello! I'm Dhruvin. I live in Bangalore, India.
+Hello!  I'm Dhruvin.  I live in Bangalore, India.
 
 * Work
 :properties:
@@ -53,9 +53,9 @@ You can contact me via [[mailto:contact@dhruvin.dev][email]], [[https://matrix.t
 via WKD.
 
 * Elsewhere
-:PROPERTIES:
+:properties:
 :custom_id: elsewhere
-:END:
+:end:
 
 You can also access this information using [[gemini://dhruvin.dev][gemini]], [[https://dhruvin.dev][https]], or [[ipns://dhruvin.dev][ipfs]].
 
