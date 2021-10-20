@@ -6,7 +6,7 @@
 :custom_id: about
 :end:
 
-Hello!  I'm Dhruvin (=/ðruwɪn/=).  I live in Bangalore, India.
+Hello!  I'm Dhruvin (pronounced \slash﻿ðruwɪn﻿\slash).  I live in Bangalore, India.
 
 * Work
 :properties:
