@@ -1,4 +1,4 @@
-;;; config.el --- Configuration of org html export
+;;; config.el --- Configuration of org publication
 
 ;;; Commentary:
 
@@ -8,27 +8,41 @@
 (require 'ox-html)
 (require 'ox-gemini)
 
-(setq org-html-doctype "html5"
-      org-html-preamble nil
-      org-html-postamble nil
-      org-html-self-link-headlines t
-      org-html-head "<style> #content { max-width: 40rem; margin: auto; } </style>"
-      org-export-with-section-numbers nil
-      org-export-with-toc nil)
+(defun preparation-function (_)
+  "Set up ipns and gemini link support for org mode.
+todo: understand how org-link works and implement this better."
+  (elpher-org-mode-integration)
+  (org-link-set-parameters
+   "ipns"
+   :export
+   (lambda (link description format _plist)
+     (let* ((url (format "ipns:%s" link))
+	    (desc (or description url)))
+       (pcase format
+	 (`html (format "<a href=\"%s\">%s</a>" url desc))
+	 (_ (format "%s (%s)" desc url)))))))
 
-;; todo: understand how org-link works and implement this better.
-(elpher-org-mode-integration)
-(org-link-set-parameters
- "ipns"
- :export
- (lambda (link description format _plist)
-   (let* ((url (format "ipns:%s" link))
-	  (desc (or description url)))
-     (pcase format
-       (`html (format "<a href=\"%s\">%s</a>" url desc))
-       (_ (format "%s (%s)" desc url))))))
-
-(provide 'config)
+(setq org-publish-timestamp-directory "build/"
+      org-publish-project-alist
+      '(("dhruvin.dev" :components ("site" "capsule"))
+	("site"
+	 :base-directory "src"
+	 :preparation-function preparation-function
+	 :publishing-directory "build/site"
+	 :publishing-function org-html-publish-to-html
+	 :with-section-numbers nil
+	 :with-toc nil
+	 :html-doctype "html5"
+	 :html-preamble nil
+	 :html-postamble nil
+	 :html-self-link-headlines t
+	 :html-head "<style> #content { max-width: 40rem; margin: auto; } </style>")
+	("capsule"
+	 :base-directory "src"
+	 :publishing-directory "build/capsule"
+	 :preparation-function preparation-function
+	 :publishing-function org-gemini-publish-to-gemini
+	 :with-section-numbers nil
+	 :with-toc nil)))
 
 ;;; config.el ends here
-
