@@ -22,8 +22,8 @@
  "ipns"
  :export
  (lambda (link description format _plist)
-   (let ((url (format "ipns:%s" link))
-	 (desc (or description url)))
+   (let* ((url (format "ipns:%s" link))
+	  (desc (or description url)))
      (pcase format
        (`html (format "<a href=\"%s\">%s</a>" url desc))
        (_ (format "%s (%s)" desc url))))))
