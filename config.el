@@ -12,7 +12,7 @@
       org-html-preamble nil
       org-html-postamble nil
       org-html-self-link-headlines t
-      org-html-style "<style> #content { max-width: 40rem; margin: auto; } </style>"
+      org-html-head "<style> #content { max-width: 40rem; margin: auto; } </style>"
       org-export-with-section-numbers nil
       org-export-with-toc nil)
 
