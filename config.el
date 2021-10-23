@@ -20,7 +20,7 @@
 	 :preparation-function preparation-function
 	 :publishing-directory "build/site"
 	 :publishing-function org-html-publish-to-html
-	 :with-section-numbers nil
+	 :section-numbers nil
 	 :with-toc nil
 	 :html-doctype "html5"
 	 :html-preamble nil
@@ -32,7 +32,7 @@
 	 :publishing-directory "build/capsule"
 	 :preparation-function preparation-function
 	 :publishing-function org-gemini-publish-to-gemini
-	 :with-section-numbers nil
+	 :section-numbers nil
 	 :with-toc nil)))
 
 ;;; config.el ends here
