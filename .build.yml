@@ -1,15 +1,9 @@
 image: guix
-artifacts:
-- dhruvin.dev/build/site.tar.gz
-- dhruvin.dev/build/capsule.tar.gz
 oauth: pages.sr.ht/PAGES:RW
-secrets:
-- 719d119c-d290-4ae6-9e65-e6d7631edc2a
 tasks:
-- deps: |
+- guix: |
     cd dhruvin.dev
     guix package -v0 -m manifest.scm
-    npm ci
 - build: |
     cd dhruvin.dev
     make build
@@ -18,6 +12,3 @@ tasks:
     make package
     acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@build/site.tar.gz -Fprotocol=HTTPS
     acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@build/capsule.tar.gz -Fprotocol=GEMINI
-- pin: |
-    cd dhruvin.dev
-    DOTENV_CONFIG_PATH=~/.env make pin
