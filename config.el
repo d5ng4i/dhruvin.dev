@@ -9,18 +9,8 @@
 (require 'ox-gemini)
 
 (defun preparation-function (_)
-  "Set up ipns and gemini link support for org mode.
-todo: understand how org-link works and implement this better."
-  (elpher-org-mode-integration)
-  (org-link-set-parameters
-   "ipns"
-   :export
-   (lambda (link description format _plist)
-     (let* ((url (format "ipns:%s" link))
-	    (desc (or description url)))
-       (pcase format
-	 (`html (format "<a href=\"%s\">%s</a>" url desc))
-	 (_ (format "%s (%s)" desc url)))))))
+  "Prepare to publish."
+  (elpher-org-mode-integration))
 
 (setq org-publish-timestamp-directory "build/"
       org-publish-project-alist

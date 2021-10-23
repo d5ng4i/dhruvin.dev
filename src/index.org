@@ -57,7 +57,7 @@ via WKD.
 :CUSTOM_ID: elsewhere
 :END:
 
-You can also access this information using [[gemini://dhruvin.dev][gemini]], [[https://dhruvin.dev][https]], or [[ipns://dhruvin.dev][ipfs]].
+You can also access this information using [[gemini://dhruvin.dev][gemini]] or [[https://dhruvin.dev][https]].
 
 * Footnotes
 
