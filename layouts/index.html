@@ -10,7 +10,7 @@
 
     {{ template "_internal/opengraph.html" . }}
  
-    {{ $vanillaCSS := resources.GetRemote "https://vanillacss.com/vanilla.css" }}
+    {{ $vanillaCSS := resources.GetRemote "https://vanillacss.com/vanilla.css" | minify }}
     <style>{{ safeCSS $vanillaCSS.Content }}</style>
   </head>
   <body><main>{{.Content}}</main></body>
