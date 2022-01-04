@@ -1,0 +1,14 @@
+image: alpine/edge
+packages:
+- hugo
+oauth: pages.sr.ht/PAGES:RW
+tasks:
+- build: |
+    cd dhruvin.dev
+    hugo
+- package: |
+    cd dhruvin.dev/public
+    tar -cvz . > ../site.tar.gz
+- publish: |
+    cd dhruvin.dev
+    acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@site.tar.gz -Fprotocol=HTTPS
