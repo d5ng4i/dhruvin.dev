@@ -1,0 +1,15 @@
+baseURL: https://dhruvin.dev
+languageCode: en-us
+title: Dhruvin Gandhi
+
+# https://gohugo.io/templates/internal/#open-graph
+params:
+  title: Dhruvin Gandhi
+  description: Free Software Developer
+taxonomies:
+  series: series
+
+# https://gohugo.io/content-management/taxonomies/#default-taxonomies
+disableKinds:
+- taxonomy
+- term
