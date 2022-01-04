@@ -9,8 +9,9 @@
     <meta name="author" content="Dhruvin Gandhi">
 
     {{ template "_internal/opengraph.html" . }}
-
-    <link rel="stylesheet" href="https://vanillacss.com/vanilla.css">
+ 
+    {{ $vanillaCSS := resources.GetRemote "https://vanillacss.com/vanilla.css" }}
+    <style>{{ safeCSS $vanillaCSS.Content }}</style>
   </head>
   <body><main>{{.Content}}</main></body>
 </html>
