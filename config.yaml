@@ -6,6 +6,8 @@ title: Dhruvin Gandhi
 params:
   title: Dhruvin Gandhi
   description: Free Software Developer
+  images:
+  - profile.jpg
 taxonomies:
   series: series
 
