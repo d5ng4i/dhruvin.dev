@@ -30,8 +30,9 @@ You can contact me via
 [email](mailto:contact@dhruvin.dev),
 [matrix](https://matrix.to/#/@dhruvin:matrix.org), or
 [mastodon](https://fosstodon.org/@dhruvin).
-You can locate my public-key via
-[WKD](https://keys.openpgp.org/vks/v1/by-fingerprint/E4155859F84534211511C3E8F34B15C27B4C5C16).
+You can locate my
+[public-key](https://keys.openpgp.org/vks/v1/by-fingerprint/E4155859F84534211511C3E8F34B15C27B4C5C16)
+via WKD.
 
 ## Elsewhere
 You can also access this information using
