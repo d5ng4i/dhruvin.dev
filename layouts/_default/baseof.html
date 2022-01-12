@@ -13,20 +13,19 @@
     {{ partial "vanilla-css.html" . }}
   </head>
   <body>
-    <header>
+    <header aria-label="Header">
       {{ block "header" . }}
-      <h1><a href="{{ .Site.BaseURL }}" style="text-decoration: none">
-        Dhruvin Gandhi
-      </a></h1>
-      <h4>{{ .Params.Description | default "Free Software Developer" }}</h4>
+      <h1><a href="{{ .Site.BaseURL }}" style="text-decoration: none">Dhruvin Gandhi</a></h1>
       {{ end }}
     </header>
-    <main>{{ block "main" . }}{{ end }}</main>
-    <footer>
+    <main aria-label="Main">
+    {{ block "main" . }}{{ end }}
+    </main>
+    <footer aria-label="Footer">
       {{ block "footer" . }}
-      <div style="text-align: center; border-top: 1px solid">
+      <section aria-label="Copyright" style="text-align: center; border-top: 1px solid">
         The code is licensed under <a href="https://www.gnu.org/licenses/gpl-3.0.txt">GPL-3.0-or-later</a>, and the articles are licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.
-      </div>
+      </section>
       {{ end }}
     </footer>
   </body>
