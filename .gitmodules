@@ -1,0 +1,3 @@
+[submodule "vanilla-css"]
+	path = assets/css/vanilla-css
+	url = https://github.com/bradleytaunt/vanilla-css.git
