@@ -2,9 +2,6 @@
 title: Dhruvin Gandhi
 ---
 
-# Dhruvin Gandhi
-Free Software Developer
-
 ## About
 Hello! I'm Dhruvin (pronounced /ðruwɪn/). I live in Bangalore, India.
 

@@ -1,17 +1,3 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>{{.Title}}</title> 
-    <meta name="description" content="Free Software Developer">
-    <meta name="author" content="Dhruvin Gandhi">
-
-    {{ template "_internal/opengraph.html" . }}
- 
-    {{ $vanillaCSS := resources.GetRemote "https://vanillacss.com/vanilla.css" | minify }}
-    <style>{{ safeCSS $vanillaCSS.Content }}</style>
-  </head>
-  <body><main>{{.Content}}</main></body>
-</html>
+{{ define "main" }}
+{{ .Content }}
+{{ end }}
