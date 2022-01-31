@@ -38,7 +38,7 @@
     {{ block "footer" . }}
     <footer aria-label="Footer">
       <section aria-label="Copyright" style="text-align: center; border-top: 1px solid">
-	{{ .RenderString .Site.Copyright }}
+	{{ markdownify .Site.Copyright }}
       </section>
     </footer>
     {{ end }}
