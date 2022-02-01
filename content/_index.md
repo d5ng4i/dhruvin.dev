@@ -30,7 +30,3 @@ You can contact me via
 You can locate my
 [public-key](https://keys.openpgp.org/vks/v1/by-fingerprint/E4155859F84534211511C3E8F34B15C27B4C5C16)
 via WKD.
-
-### Elsewhere
-You can also access this information using
-[gemini](gemini://dhruvin.dev) or [https](https://dhruvin.dev).
