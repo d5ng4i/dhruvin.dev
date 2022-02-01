@@ -22,11 +22,13 @@
       <nav aria-label="Navigation" style="display: flex; margin: 0 2rem; align-items: end">
         <ul aria-label="Links" style="list-style: none; padding: 0">
           {{ range .Site.Menus.main }}
+	  |
           <li style="display: inline-block">
             <a href="{{ .Page.Permalink }}"
 	       style="text-decoration: none">{{ .Page.Title }}</a>
           </li>
           {{ end }}
+	  |
         </ul>
       </nav>
       {{ end }}

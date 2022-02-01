@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main aria-label="Main">
+  <article style="display: flex" aria-label="Content">
+    <section style="flex: 1; display: flex; flex-direction: column; align-items: center" aria-label="UPI">
+      <h3>UPI</h3>
+      <a href="upi://pay?pa=dhruvin2910@upi&pn=Dhruvin+Gandhi">dhruvin2910@upi</a>
+      {{- $qrCode := resources.Get "images/upi.jpg" -}}
+      <img src="{{ $qrCode.Permalink }}" alt="QR Code">
+    </section>
+    <section style="flex: 1; display: flex; flex-direction: column; align-items: center" aria-label="Stripe">
+      <h3>Stripe</h3>
+      To be done
+    </section>
+  </article>
+</main>
+{{ end }}
