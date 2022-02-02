@@ -1,0 +1,7 @@
+{{ $bulma := resources.Get "css/bulma/css/bulma.css" }}
+{{ $custom := resources.Get "css/style.css" }}
+{{ $bundle := slice $bulma $custom
+                    | resources.Concat "css/bundle.css"
+                    | minify
+                    | fingerprint "sha512" }}
+<link rel="stylesheet" href="{{ $bundle.Permalink }}" integrity="{{ $bundle.Data.Integrity }}">

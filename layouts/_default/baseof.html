@@ -10,38 +10,35 @@
 
     {{ template "_internal/opengraph.html" . }}
 
-    {{ partial "vanilla-css.html" . }}
+    {{ partial "styles.html" . }}
   </head>
-  <body>
+  <body class="container p-2">
     {{ block "header" . }}
-    <header aria-label="Header" style="display: flex; flex-wrap: wrap">
-      <h2 style="border: none; flex: auto">
-        <a href="{{ .Site.Home.Permalink }}" style="text-decoration: none">Dhruvin Gandhi</a>
-      </h2>
-      {{ block "nav" . }}
-      <nav aria-label="Navigation" style="display: flex; align-items: end">
-        <ul aria-label="Links" style="list-style: none; padding: 0">
-          {{ range .Site.Menus.main }}
-	  |
-          <li style="display: inline-block">
-            <a href="{{ .Page.Permalink }}"
-	       style="text-decoration: none">{{ .Page.Title }}</a>
-          </li>
-          {{ end }}
-	  |
-        </ul>
+    <header aria-label="Header">
+      <nav class="navbar is-flex is-flex-wrap-wrap" aria-label="Navigation">
+        <div class="navbar-brand">
+          <a class="title" href="{{ .Site.Home.Permalink }}">Dhruvin Gandhi</a>
+        </div>
+        <div class="navbar-menu is-active is-flex-grow-1 is-shadowless">
+          <div class="navbar-end is-flex is-justify-content-flex-end">
+            {{ range .Site.Menus.main }}
+            <a class="navbar-item" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+            {{ end }}
+          </div>
+        </div>
       </nav>
-      {{ end }}
     </header>
     {{ end }}
+    <hr>
     {{ block "main" . }}
       <main aria-label="Main"></main>
     {{ end }}
+    <hr>
     {{ block "footer" . }}
-    <footer aria-label="Footer">
-      <section aria-label="Copyright" style="text-align: center; border-top: 1px solid">
+    <footer class="footer has-background-transparent" aria-label="Footer">
+      <div class="has-text-centered">
 	{{ markdownify .Site.Copyright }}
-      </section>
+      </div>
     </footer>
     {{ end }}
   </body>

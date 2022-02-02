@@ -1,23 +1,23 @@
 {{ define "main" }}
 <main aria-label="Main">
-  <article style="display: flex; flex-wrap: wrap" aria-label="Content">
-    <section style="flex: auto; display: flex; flex-direction: column; align-items: center" aria-label="UPI">
-      <h3>UPI</h3>
-      <a href="upi://pay?pa=dhruvin2910@upi&pn=Dhruvin+Gandhi">dhruvin2910@upi</a>
+  <article class="columns" aria-label="Content">
+    <div class="column is-flex is-flex-direction-column is-align-items-center" aria-label="UPI">
+      <h3 class="title is-4">UPI</h3>
+      <a class="mb-5" href="upi://pay?pa=dhruvin2910@upi&pn=Dhruvin+Gandhi">dhruvin2910@upi</a>
       {{- $qrCode := resources.Get "images/upi.jpg" -}}
-      <img src="{{ $qrCode.Permalink }}" alt="QR Code">
-    </section>
-    <section style="flex: auto; display: flex; flex-direction: column; align-items: center" aria-label="Stripe">
-      <h3>Stripe</h3>
+      <img class="image" width="200" height="200" src="{{ $qrCode.Permalink }}" alt="QR Code">
+    </div>
+    <div class="column is-flex is-flex-direction-column is-align-items-center" aria-label="Stripe">
+      <h3 class="title is-4">Stripe</h3>
       <section aria-label="Currencies">
         <a href="https://buy.stripe.com/7sI2bq4enasm1Gg003">INR</a>
         | <a href="https://buy.stripe.com/dR6bM05irfMG2KkaEF">USD</a>
       </section>
-    </section>
-    <section style="flex: auto; display: flex; flex-direction: column; align-items: center" aria-label="Bank Transfer">
-      <h3>Bank Transfer</h3>
+    </div>
+    <div class="column is-flex is-flex-direction-column is-align-items-center" aria-label="Bank Transfer">
+      <h3 class="title is-4">Bank Transfer</h3>
       <a href="mailto:contact@dhruvin.dev">Contact</a>
-    </section>
+    </div>
   </article>
 </main>
 {{ end }}

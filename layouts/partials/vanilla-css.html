@@ -1,2 +1,0 @@
-{{ $vanillaCSS := resources.Get "css/vanilla-css/vanilla.css" | minify | fingerprint "sha512" }}
-<link rel="stylesheet" href="{{ $vanillaCSS.Permalink }}" integrity="{{ $vanillaCSS.Data.Integrity }}">

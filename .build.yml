@@ -1,14 +1,15 @@
 image: alpine/edge
 packages:
 - hugo
+- make
 oauth: pages.sr.ht/PAGES:RW
 tasks:
 - build: |
     cd dhruvin.dev
-    hugo
+    make hugo
 - package: |
-    cd dhruvin.dev/public
-    tar -cvz . > ../site.tar.gz
+    cd dhruvin.dev
+    make package
 - publish: |
     cd dhruvin.dev
     acurl -f https://pages.sr.ht/publish/dhruvin.dev -Fcontent=@site.tar.gz -Fprotocol=HTTPS
