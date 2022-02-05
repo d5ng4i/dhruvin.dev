@@ -8,6 +8,8 @@
     <meta name="description" content="{{ .Params.description | default "Free Software Developer" }}">
     <meta name="author" content="Dhruvin Gandhi">
 
+    {{ partial "alternative-output-formats.html" . }}
+
     {{ template "_internal/opengraph.html" . }}
 
     {{ partial "styles.html" . }}
