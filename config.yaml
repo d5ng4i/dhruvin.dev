@@ -2,6 +2,10 @@ baseURL: https://dhruvin.dev
 languageCode: en-us
 title: Dhruvin Gandhi
 
+author:
+  name: Dhruvin Gandhi
+  email: contact@dhruvin.dev
+
 copyright: >
   The [code](https://git.sr.ht/~dhruvin/dhruvin.dev)
   is licensed under
@@ -20,7 +24,7 @@ params:
   - profile.jpg
 
 permalinks:
-  blog: /:sections/:year/:month/:title/
+  blog: /:sections/:year/:month/:day/:title/
 
 relativeURLs: true
 
