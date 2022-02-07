@@ -2,6 +2,7 @@
 <main aria-label="Main">
   <article class="content" aria-label="Content">
     {{ .Content }}
+    {{ partial "feedback.html" . }}
   </article>
   <hr>
   {{ partial "webring.html" }}
