@@ -1,3 +1,4 @@
-https://varunbarad.com/feed.xml
-https://drewdevault.com/blog/index.xml
 https://blog.golang.org/feed.atom?format=xml
+https://drewdevault.com/blog/index.xml
+https://sourcehut.org/blog/index.xml
+https://varunbarad.com/feed.xml
