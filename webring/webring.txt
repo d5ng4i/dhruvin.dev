@@ -1,4 +1,5 @@
 https://blog.golang.org/feed.atom?format=xml
 https://drewdevault.com/blog/index.xml
+https://mastodon.art/@dixita.rss
 https://sourcehut.org/blog/index.xml
 https://varunbarad.com/feed.xml
