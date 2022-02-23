@@ -1,6 +1,9 @@
 {{ define "main" }}
 <main aria-label="Main">
   <article class="content" aria-label="Content">
+    <h3 class="has-text-centered">{{ .Title }}</h3>
+    <p class="is-italic has-text-centered">on {{ .Date.Format "2006-01-02" }}</p>
+    <hr>
     {{ .Content }}
     <hr>
     {{ partial "feedback.html" . }}
