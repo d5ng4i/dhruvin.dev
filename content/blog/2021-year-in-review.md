@@ -42,7 +42,7 @@ their model of business aligns with what I was looking for.
 
 I had been using [GPGTools](https://gpgtools.org) with Apple Mail for about two
 years then. It was a perfect setup for me to be able to communicate with people
-privately over email. I replaced it with [notmuch](https://www.notmuch.org/).
+privately over email. I replaced it with [notmuch](https://notmuchmail.org/).
 Notmuch introduced a different kind of email experience, which grew on me. I
 just had purchased a copy of [GPG Mail Support
 Plan](https://gpgtools.org/support-plan) before moving to notmuch. I asked the
