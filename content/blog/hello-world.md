@@ -45,5 +45,5 @@ The blog uses RSS 2.0.
 
 Below every post on this blog, you'll see posts from various blogs under the
 Webring section. It's a great way to explore articles and authors I find
-interesting on the web. If you come from social media, think of it as "*Blogs
+interesting on the web. If you come from social media, think of it as "*Posts
 you may like*" section.
