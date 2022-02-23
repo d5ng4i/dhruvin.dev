@@ -6,14 +6,12 @@ categories:
 - misc
 ---
 
-### Hello World
-
 After months of procrastination, I finally managed to gather enough time, and
 more importantly will, to write and maintain a weblog of my work/life. I intend
 to publish posts every week about the projects I work on. Most of my posts will
 be from diverse areas of interest related to computers.
 
-#### On the Web
+### On the Web
 
 You can visit [categories]({{< ref "categories" >}}),
 [tags]({{< ref "tags" >}}), and [series]({{< ref "series" >}}) pages to explore
@@ -21,7 +19,7 @@ the posts according to your preferences. At the time of writing this post, you
 won't be able to find anything useful on them, but those pages will be
 populated as I write and label more posts.
 
-##### Feedback
+#### Feedback
 
 I welcome constructive criticism or feedback on my posts to
 [~dhruvin/public-inbox@lists.sr.ht](mailto:~dhruvin/public-inbox@lists.sr.ht).
@@ -29,7 +27,7 @@ Note that all emails sent to aforementioned address will be publicly available
 for everyone to read/archive. If you wish to communicate with me privately,
 send an email to [contact@dhruvin.dev](mailto:contact@dhruvin.dev) instead.
 
-#### Via RSS
+### Via RSS
 
 To receive updates from my blog via RSS, you can subscribe to:
 
@@ -43,7 +41,7 @@ To receive updates from my blog via RSS, you can subscribe to:
 
 The blog uses RSS 2.0.
 
-#### About Webring
+### About Webring
 
 Below every post on this blog, you'll see posts from various blogs under the
 Webring section. It's a great way to explore articles and authors I find
