@@ -2,7 +2,12 @@
 title: "2021 Year in Review"
 date: 2022-02-23T21:50:06+05:30
 categories:
-- work
+- misc
+tags:
+- alpine
+- guix
+- minix
+- sourcehut
 series:
 - year-in-review
 ---
