@@ -2,7 +2,20 @@
 <main aria-label="Main">
   <article class="content" aria-label="Content">
     <h3 class="has-text-centered">{{ .Title }}</h3>
-    <p class="is-italic has-text-centered">on {{ .Date.Format "2006-01-02" }}</p>
+    <p class="has-text-centered is-italic">
+      on {{ .Date.Format "2006-01-02" }}
+      {{ $category := index .Params.categories 0 }}
+      in <a href="{{ ref . $category }}">{{ $category }}</a>
+    </p>
+    {{ if .Params.tags }}
+    <p class="has-text-centered">
+    {{ $page := . }}
+    |
+    {{ range .Params.tags }}
+      <a href="{{ ref $page . }}">{{ . }}</a> |
+    {{ end}}
+    </p>
+    {{ end }}
     <hr>
     {{ .Content }}
     <hr>
