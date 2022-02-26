@@ -13,8 +13,8 @@ series:
 
 ### Website
 
-I was working on [my website](https://sr.ht/~dhruvin/dhruvin.dev) throughout
-the month. It used to be [written in Org
+I was working on [my website](https://git.sr.ht/~dhruvin/dhruvin.dev)
+throughout the month. It used to be [written in Org
 Mode](https://git.sr.ht/~dhruvin/dhruvin.dev/tree/org) which was compiled to
 html and gmi using ox-html and ox-gemini respectively.
 
