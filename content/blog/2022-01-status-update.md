@@ -37,11 +37,11 @@ can I get myself to do it.
 
 #### pages.sr.ht
 
-I've been hosting my personal website on sourcehut's pages.sr.ht service. It
-lacked support for custom 404.html page. I implemented it and sent the patch
+I've been hosting my personal website on [sourcehut pages](https://srht.site).
+It lacked support for custom 404.html page. I implemented it and sent the patch
 upstream. Since it was my first contribution with go code, I expected requests
-for improvement. The feature is GraphQL only, by design. I updated the build job
-of my website
+for improvement. The feature is GraphQL only, by design. I updated the build
+job of my website
 [accordingly](https://git.sr.ht/~dhruvin/dhruvin.dev/commit/d232be3b2c0dd085a42d4013953e4d98a0f2e160).
 I intend to add support of said feature to [hut](https://sr.ht/~emersion/hut)
 soon.
@@ -88,7 +88,7 @@ improved the contributor experience:
 
 Currently, the build job lints *all* guix packages, including the ones from
 official guix channel. I submitted a patch to lint only the guixrus packages.
-Which was later reverted due to problems with guix, where it was considering
+Which was later reverted due to problems with it, where guix was considering
 the utility guile script I wrote to be a part of the guixrus channel. I indent
 to submit another patch which fixes this.
 
@@ -115,6 +115,4 @@ forgetting some):
 Last month was all about the transition. I hope to continue becoming good with
 this new setup as I get more used to it in upcoming months. Since I don't have
 much experience with writing, especially in English, my writing may be crude,
-which I will improve upon. Suggestions are welcome!
-
-Peace.
+which I will improve upon. Suggestions are welcome! Peace.
