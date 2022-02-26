@@ -24,7 +24,7 @@
           <a class="title" href="{{ .Site.Home.Permalink }}">Dhruvin Gandhi</a>
         </div>
         <div class="navbar-menu is-active is-flex-grow-1 is-shadowless">
-          <div class="navbar-end is-flex is-justify-content-flex-end">
+          <div class="navbar-end is-flex is-justify-content-flex-end is-flex-wrap-wrap">
             {{ range .Site.Menus.main }}
             <a class="navbar-item" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
             {{ end }}
