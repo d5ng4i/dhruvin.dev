@@ -108,7 +108,7 @@ forgetting some):
 - Email Client: [emacs](https://www.gnu.org/software/emacs/) + [notmuch](https://notmuchmail.org) -> [aerc](https://aerc-mail.org/) + [notmuch](https://notmuchmail.org)
 - IRC Client: [ERC](https://www.gnu.org/software/emacs/erc.html) -> [weechat](https://weechat.org/)
 - RSS Reader: [elfeed](https://github.com/skeeto/elfeed) -> [newsboat](https://newsboat.org/)
-- Terminal: [vterm](https://github.com/akermu/emacs-libvterm) buffers -> [alactritty](https://github.com/alacritty/alacritty) + [tmux](https://github.com/tmux/tmux)
+- Terminal: [vterm](https://github.com/akermu/emacs-libvterm) buffers -> [alacritty](https://github.com/alacritty/alacritty) + [tmux](https://github.com/tmux/tmux)
 
 ### Conclusion
 
