@@ -1,0 +1,13 @@
+.has-background-transparent {
+  background-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  & > a {
+    visibility: hidden;
+  } 
+
+  &:hover > a {
+    visibility: visible;
+  }
+}
