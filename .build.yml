@@ -2,8 +2,12 @@ image: alpine/edge
 packages:
 - hugo
 - make
+- npm
 oauth: pages.sr.ht/PAGES:RW
 tasks:
+- deps: |
+    cd dhruvin.dev
+    npm ci
 - build: |
     cd dhruvin.dev
     make hugo

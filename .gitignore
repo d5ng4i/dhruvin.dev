@@ -10,3 +10,6 @@ hugo_stats.json
 
 # Website archive
 site.tar.gz
+
+# Node Modules
+/node_modules/

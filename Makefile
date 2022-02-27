@@ -3,7 +3,7 @@
 build: hugo
 
 clean:
-	rm -rf public site.tar.gz
+	rm -rf public site.tar.gz hugo_stats.json
 
 hugo:
 	hugo --minify

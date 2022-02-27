@@ -6,6 +6,9 @@ author:
   name: Dhruvin Gandhi
   email: contact@dhruvin.dev
 
+build:
+  writeStats: true
+
 copyright: >
   The [code](https://git.sr.ht/~dhruvin/dhruvin.dev)
   is licensed under
