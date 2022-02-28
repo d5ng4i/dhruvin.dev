@@ -1,5 +1,7 @@
 ---
 title: Dhruvin Gandhi
+outputs:
+- html
 ---
 
 ### About

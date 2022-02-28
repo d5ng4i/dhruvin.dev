@@ -1,3 +1,5 @@
 ---
 title: Donate
+outputs:
+- html
 ---
