@@ -14,7 +14,7 @@ series:
 
 Last year, I decided to move away from using proprietary software in favor of
 using free, libre, and open-source software. I will share the reasons in a
-future post. What entailed that decision is summarised in this one. I divided
+future post. What entailed that decision is summarized in this one. I divided
 the post into 4 parts to help understand the timeline better.
 
 ### First Quarter
@@ -146,7 +146,7 @@ on #minix and #netbsd on irc.libera.chat. They were friendly and helpful.
 
 I implemented support for [accepting build job
 note](https://lists.sr.ht/~sircmpwn/sr.ht-dev/patches/27051) as querystring
-paramenter because I wanted to provide links to predefined build jobs along
+parameter because I wanted to provide links to predefined build jobs along
 with example build manifests in guix cookbook.
 
 #### builds.sr.ht-guix
