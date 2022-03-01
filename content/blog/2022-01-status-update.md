@@ -43,7 +43,7 @@ upstream. Since it was my first contribution with go code, I expected requests
 for improvement. The feature is GraphQL only, by design. I updated the build
 job of my website
 [accordingly](https://git.sr.ht/~dhruvin/dhruvin.dev/commit/d232be3b2c0dd085a42d4013953e4d98a0f2e160).
-I intend to add support of said feature to [hut](https://sr.ht/~emersion/hut)
+I intend to add [^1] support of said feature to [hut](https://sr.ht/~emersion/hut)
 soon.
 
 - [[PATCH pages.sr.ht v6] Add support for custom 404.html page](https://lists.sr.ht/~sircmpwn/sr.ht-dev/patches/28884)
@@ -116,3 +116,6 @@ Last month was all about the transition. I hope to continue becoming good with
 this new setup as I get more used to it in upcoming months. Since I don't have
 much experience with writing, especially in English, my writing may be crude,
 which I will improve upon. Suggestions are welcome! Peace.
+
+[^1]: 2022-02 Status Update: I added support for [said feature]({{< ref
+  "2022-02-status-update#hut" >}}) to hut
