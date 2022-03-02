@@ -72,7 +72,7 @@ $ hut pages publish </path/to/site.tar.gz> \
 ```
 
 - [[PATCH 0/2] pages publish: Add subdirectory support](https://lists.sr.ht/~emersion/hut-dev/patches/29739)
-- [[PATCH] pages publish: Add --not-found](https://lists.sr.ht/~emersion/hut-dev/patches/29897)
+- [[PATCH v2] pages publish: Add --not-found](https://lists.sr.ht/~emersion/hut-dev/patches/29932)
 
 #### pages.sr.ht
 
