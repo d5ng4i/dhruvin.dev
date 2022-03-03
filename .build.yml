@@ -1,9 +1,11 @@
 image: alpine/edge
 packages:
 - hugo
+- hut
 - make
 - npm
-oauth: pages.sr.ht/PAGES:RW
+secrets:
+- ad9e2478-7946-4006-b610-7795e70e7b90
 tasks:
 - deps: |
     cd dhruvin.dev
@@ -16,7 +18,6 @@ tasks:
     make package
 - publish: |
     cd dhruvin.dev
-    acurl https://pages.sr.ht/query \
-      -Foperations='{ "query": "mutation Publish($domain: String!, $content: Upload!, $siteConfig: SiteConfig) { publish(domain: $domain, content: $content, siteConfig: $siteConfig) { id }}", "variables" : { "domain": "dhruvin.dev", "content": null, "siteConfig": { "notFound": "/404.html" } } }' \
-      -Fmap='{ "site": ["variables.content"] }' \
-      -Fsite=@site.tar.gz
+    hut pages publish site.tar.gz \
+      --domain dhruvin.dev \
+      --not-found /404.html
