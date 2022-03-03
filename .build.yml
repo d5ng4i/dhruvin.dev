@@ -9,7 +9,7 @@ secrets:
 tasks:
 - deps: |
     cd dhruvin.dev
-    npm ci
+    make deps
 - build: |
     cd dhruvin.dev
     make hugo
@@ -18,6 +18,4 @@ tasks:
     make package
 - publish: |
     cd dhruvin.dev
-    hut pages publish site.tar.gz \
-      --domain dhruvin.dev \
-      --not-found /404.html
+    make publish
