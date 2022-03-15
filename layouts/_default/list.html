@@ -1,12 +1,38 @@
 {{ define "main" }}
+{{ $sections := slice "Blog" "Categories" "Series" "Tags" }}
 <main aria-label="Main">
-  <ul aria-label="Pages">
-    {{ range .Pages }}
-    <li aria-label="Page">
-      <span>{{ .Date.Format "2006-01-02" }}</span>
-      <a href="{{ .Permalink }}">{{ .Title }}</a>
-    </li>
-    {{ end }}
-  </ul>
+  <article class="content" aria-label="Posts">
+    <h3>
+      {{ if in $sections .Title }}
+      {{ .Title }}
+      {{ else }}
+      {{ .Section }}/{{ .Title }}
+      {{ end }}
+    </h3>
+    <ul aria-label="Pages">
+      <br>
+      {{ range .Pages }}
+      <li aria-label="Page">
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        {{ if .Params.categories }}
+        <div>
+          {{ $category := index .Params.categories 0 }}
+          <em>on {{ .Date.Format "2006-01-02" }} in <a href="{{ ref . $category }}">{{ $category }}</a></em>
+        </div>
+        {{ end }}
+        {{ if .Params.tags }}
+        <div>
+          {{ $page := . }}
+          |
+          {{ range .Params.tags }}
+            <a href="{{ ref $page . }}">{{ . }}</a> |
+          {{ end}}
+        </div>
+        {{ end }}
+      </li>
+      <br>
+      {{ end }}
+    </ul>
+  </article>
 </main>
 {{ end }}
