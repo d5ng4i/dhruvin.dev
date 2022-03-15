@@ -1,14 +1,13 @@
 ---
 title: "2022-02 Status Update"
+summary: Updates about work on my website, alpine packages, and sourcehut projects.
 date: 2022-03-01T12:07:20+05:30
 categories:
-- misc
+- status-update
 tags:
 - alpine
 - sourcehut
 - website
-series:
-- status-update
 ---
 
 ### Website

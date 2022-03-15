@@ -1,14 +1,13 @@
 ---
 title: "2022-01 Status Update"
+summary: Updates about work on my website, sourcehut projects, doug, guixrus; and the transition from all GNU to all Non GNU.
 date: 2022-02-25T18:06:20+05:30
 categories:
-- misc
+- status-update
 tags:
 - guixrus
 - sourcehut
 - website
-series:
-- status-update
 ---
 
 ### Website

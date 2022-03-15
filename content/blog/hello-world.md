@@ -1,6 +1,5 @@
 ---
 title: Hello World
-summary: An introductory blog post
 date: 2022-02-02T11:43:25+05:30
 categories:
 - misc
@@ -10,6 +9,8 @@ After months of procrastination, I finally managed to gather enough time, and
 more importantly will, to write and maintain a weblog of my work/life. I intend
 to publish posts every week about the projects I work on. Most of my posts will
 be from diverse areas of interest related to computers.
+
+<!--more-->
 
 ### On the Web
 

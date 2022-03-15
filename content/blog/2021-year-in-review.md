@@ -2,20 +2,21 @@
 title: "2021 Year in Review"
 date: 2022-02-23T21:50:06+05:30
 categories:
-- misc
+- year-in-review
 tags:
 - alpine
 - guix
 - minix
 - sourcehut
-series:
-- year-in-review
 ---
 
 Last year, I decided to move away from using proprietary software in favor of
 using free, libre, and open-source software. I will share the reasons in a
-future post. What entailed that decision is summarized in this one. I divided
-the post into 4 parts to help understand the timeline better.
+future post. What entailed that decision is summarized in this one.
+
+<!--more-->
+
+I divided the post into 4 parts to help understand the timeline better.
 
 ### First Quarter
 
