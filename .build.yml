@@ -4,8 +4,7 @@ packages:
 - hut
 - make
 - npm
-secrets:
-- ad9e2478-7946-4006-b610-7795e70e7b90
+oauth: pages.sr.ht/PAGES:RW
 tasks:
 - deps: |
     cd dhruvin.dev
