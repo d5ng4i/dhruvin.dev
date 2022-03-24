@@ -3,11 +3,10 @@
 <main aria-label="Main">
   <article class="content" aria-label="Posts">
     <h3>
-      {{ if in $sections .Title }}
-      {{ .Title }}
-      {{ else }}
-      {{ .Section }}/{{ .Title }}
+      {{ if not (in $sections .Title) }}
+      <a href="{{ ref . (path.Join "/" .Section) }}">{{ .Section }}</a>/
       {{ end }}
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
     </h3>
     <ul aria-label="Pages">
       <br>
