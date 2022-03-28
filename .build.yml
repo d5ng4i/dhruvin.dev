@@ -5,6 +5,10 @@ packages:
 - make
 - npm
 oauth: pages.sr.ht/PAGES:RW
+triggers:
+- action: email
+  condition: failure
+  to: contact@dhruvin.dev
 tasks:
 - deps: |
     cd dhruvin.dev
