@@ -113,7 +113,7 @@ I [contributed]({{< ref "2022-01-status-update#guixrus" >}}) support for
 linting [guixrus](https://sr.ht/~whereiseveryone/guixrus) packages. I had to
 disable linting temporarily; as the task took hours to lint not just the
 guixrus packages, but also the official guix packages. I'll figure out a way to
-select a subset of packages to lint and sent a patch upstream.
+select a subset of packages to lint and sent a patch upstream [^1].
 
 - [[PATCH guixrus] ci: disable linting temporarily](https://lists.sr.ht/~whereiseveryone/guixrus/patches/30593)
 
@@ -170,3 +170,6 @@ I felt mostly unproductive in the beginning of this month, so I did some
 maintenance on my past projects during that time.
 
 Hoping to be back on track next month. Peace.
+
+[^1]: 2022-04 Status Update: I [fixed]({{< ref "2022-04-status-update#guixrus"
+  >}}) the issue.
