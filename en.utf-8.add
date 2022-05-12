@@ -1,4 +1,5 @@
 3D
+3b793bb
 APIs
 AR9271
 Authy
@@ -10,6 +11,7 @@ Dixita
 DotA2
 EMMS
 ERC
+FSCI
 GPG
 GPGTools
 GitLab
@@ -19,6 +21,7 @@ IDEs
 IPFS
 IPNS
 JetBrains
+Karthik
 Keychain
 LaTeX
 MPV
@@ -37,9 +40,11 @@ QuickTime
 ROS's
 RSS
 ReactOS
+Sai
 Ser
 Splitwise
 Stallman
+T00
 T11
 T12
 T14
@@ -58,15 +63,16 @@ aerc
 alacritty
 aport
 aports
+arg
 args
 autorun
 bulma
 ci
 cis194
 commiters
+conf
 config
 css
-date
 date
 dev
 dhruvin
@@ -92,7 +98,6 @@ greetd
 groff
 gtkgreet
 guix
-guix
 guixrus
 hledger
 html
@@ -100,6 +105,8 @@ hugo
 hutConfig
 iadd
 icecat
+inlinable
+inlining
 instanceName
 iou
 irc
@@ -123,6 +130,7 @@ openrc
 openscad
 openssh
 otp
+pipewire
 postcss
 postmarketOS
 pre
@@ -143,6 +151,8 @@ stockquotes
 stylesheet
 stylesheets
 subdirectory
+swaylock
+swaylockd
 tmux
 todo
 todoman
@@ -157,6 +167,7 @@ vterm
 wayland
 weechat
 whereiseveryone
+wlgreet
 workation
 xml
 yml
