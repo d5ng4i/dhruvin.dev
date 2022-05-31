@@ -26,6 +26,5 @@ I host my projects on [sourcehut](https://sr.ht/~dhruvin).
 
 ### Contact
 You can contact me via [email](mailto:contact@dhruvin.dev),
-[matrix](https://matrix.to/#/@dhruvin:matrix.org), or
-[mastodon](https://fosstodon.org/@dhruvin). You can locate my
-[public-key](https://dhruvin.dev/public-key.asc) via WKD.
+[matrix](https://matrix.to/#/@dhruvin:matrix.org), or {{< mastodon >}}.
+You can locate my [public-key](https://dhruvin.dev/public-key.asc) via WKD.
