@@ -57,11 +57,10 @@ the future of digital music.
 
 ### Conclusion
 
-I came to know about [FSCI](https://matrix.to/#/#fsci-space:poddery.com) from a
-fellow Free Software Hacker [Sai Karthik](https://kskarthik.gitlab.io). I was
-pleasantly surprised to see many people from India sharing similar values about
-software freedom. If you're interested knowing more or sharing something
-interesting, do join us.
+I came to know about [FSCI](https://fsci.in) from a fellow Free Software Hacker
+[Sai Karthik](https://kskarthik.gitlab.io). I was pleasantly surprised to see
+many people from India sharing similar values about software freedom. If you're
+interested knowing more or sharing something interesting, do join us.
 
 I started using [swaylock](https://github.com/swaywm/swaylock) and
 [swaylockd](https://github.com/jirutka/swaylockd) to lock my laptop when I'm
