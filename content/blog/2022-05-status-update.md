@@ -19,7 +19,12 @@ accepting timezone as an arg, instead of a flag (from commit
 [3b793bb](https://gitlab.alpinelinux.org/alpine/alpine-conf/-/commit/3b793bb78518908eccccebf9a5943bceb4eb449b)).
 This broke the edge build of alpine image of builds.sr.ht; which I fixed.
 
+I was figuring out a way to show code metrics of one of my go modules. I
+proposed a feature to be added to builds.sr.ht in detail, which got rejected
+due to the complexity involved in its implementation and its narrow scope.
+
 - [[PATCH builds.sr.ht] alpine: run setup-timezone conditionally](https://lists.sr.ht/~sircmpwn/sr.ht-dev/patches/32365)
+- [[RFC] Build Attributes](https://lists.sr.ht/~sircmpwn/sr.ht-discuss/%3CCKACI3MZHCYH.36RI4SI29KL2C%40hp%3E)
 
 #### wlgreet
 
