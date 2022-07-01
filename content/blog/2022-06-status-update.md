@@ -24,13 +24,12 @@ for [hledger-timeclock](#hledger-timeclock).
 
 ##### guix
 
-Since I contribute to guix and alpine both whenever I need something or have
-some spare time, I wanted a convenient way to create guix packages on alpine.
-So I tried packaging guix for alpine linux. Alpine doesn't have many guile
-packages and there's no support from abuild tools for it. I packaged all guile
-dependencies of guix, i.e. guile-gcrypt, guile-gnutls, guile-sqlite3,
-guile-zlib, guile-lzlib, guile-avahi, scheme-bytestructures, guile-git, and
-guile-json.
+Since I contribute to guix and alpine both, I wanted a convenient way to create
+guix packages on alpine. So I tried packaging guix for alpine linux. Alpine
+doesn't have many guile packages and there's no support from abuild tools for
+it. I packaged all guile dependencies of guix, i.e. guile-gcrypt, guile-gnutls,
+guile-sqlite3, guile-zlib, guile-lzlib, guile-avahi, scheme-bytestructures,
+guile-git, and guile-json.
 
 guix-daemon required argp from glibc. musl doesn't have it. I used
 argp-standalone as a substitute. This allowed me to build guix-daemon
