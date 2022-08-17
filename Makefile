@@ -1,6 +1,6 @@
 .PHONY: build clean deps gpg hugo openring package publish spf
 
-GPG_KEYID=E4155859F84534211511C3E8F34B15C27B4C5C16
+GPG_KEYID=AF931F6B46EE2671AD228A1C72CECACDB63DDDA0
 GPG_KEYPATH=static/public-key.asc
 WKD_PATH=static/.well-known/openpgpkey
 WKD_HASH=dj3498u4hyyarh35rkjfnghbjxug6b19 # gpg --list-key --with-wkd-hash ${GPG_KEYID}
