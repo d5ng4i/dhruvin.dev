@@ -6,9 +6,15 @@ AR9271
 Andhra
 Authy
 BSOD
+Barad
+BingeLearning
 CSS
 Chintan
 Cygwin
+DL
+DataCamp
+DataQuest
+Divyesh
 Dixita
 DotA2
 EMMS
@@ -18,6 +24,7 @@ GN
 GPG
 GPGTools
 GSTR
+Ganatra
 GitLab
 GraphQL
 HTTPS
@@ -32,15 +39,21 @@ MPV
 MacBook
 MacOS
 Minecraft
+NN
+NNs
 NetBSD
 NotFound
+OpenAI
 OpenSCAD
 OpenSSH
 POC
+Peshavaria
 Pipewire
 PostCSS
 PulseAudio
 QuickTime
+RL
+RNN
 ROS's
 RSS
 ReactOS
@@ -54,6 +67,7 @@ T12
 T14
 T18
 T20
+TensorFlow
 Todos
 VMs
 Varun
@@ -69,6 +83,7 @@ abump
 addon
 addons
 aerc
+ai
 alacritty
 alpine's
 apk
@@ -91,6 +106,7 @@ conf
 config
 css
 date
+deeplearning
 dev
 dhruvin
 dhruvin's
@@ -127,6 +143,7 @@ hledger
 html
 hugo
 hutConfig
+hyperparameter
 iadd
 icecat
 init
@@ -136,7 +153,10 @@ instanceName
 iou
 irc
 json
+jupyter
+keras
 keyserver
+lastMod
 libc
 libera
 libre
@@ -144,6 +164,7 @@ libykpers
 linter
 linux
 lzlib
+matplotlib
 mbsync
 metadata
 minecraft
@@ -156,6 +177,7 @@ netbsd
 newsboat
 notFound
 notmuch
+numpy
 openpgp
 openrc
 openscad
@@ -178,10 +200,13 @@ rss
 rtd
 s6
 s6rc
+scikit
+scipy
 seatd
 soundfont
 sourcehut
 spf13
+sqlalchemy
 sqlite3
 sr.ht
 statusCode
@@ -193,6 +218,7 @@ subpackage
 swaylock
 swaylockd
 teluguvijayam
+tensorflow
 timeclock
 tmux
 todo
