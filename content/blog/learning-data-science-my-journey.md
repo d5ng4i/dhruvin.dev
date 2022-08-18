@@ -214,9 +214,9 @@ journey won’t be that helpful to others. I shared a draft with my friends and
 the responses were positive. Thanks [Varun Barad](https://varunbarad.com) and
 [Dixita Ganatra](https://dixita.dev).
 
-[Divyesh Peshavaria](https://divyesh.dev) mentioned that I should include
-details of the projects as well. I am thinking to publish an article for each
-project in near future. Maybe a series [^4].
+[Divyesh Peshavaria](https://www.linkedin.com/in/divyesh-peshavaria/) mentioned
+that I should include details of the projects as well. I am thinking to publish
+an article for each project in near future. Maybe a series [^4].
 
 [^1]: I no longer hold some opinions shared in the article.
 [^2]: I never got to complete it.
