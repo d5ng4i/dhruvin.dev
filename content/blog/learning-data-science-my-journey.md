@@ -40,7 +40,7 @@ three topics,
 Both the depth and the breadth of content is remarkable. Andrew is an inspiring
 teacher. One of his quotes got stuck in my mind.
 
-- Artificial Intelligence is the new Electricity. - Andrew Ng
+> "Artificial Intelligence is the new Electricity." -- Andrew Ng
 
 I am very passionate about automation. Electricity brought the first wave and
 revolutionized everything. And I believe that Artificial Intelligence (AI) will
