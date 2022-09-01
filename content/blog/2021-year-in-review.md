@@ -185,9 +185,7 @@ another detailed post about it in future.
 
 I started accepting one time and recurring donations. I was relying on
 donations for a while until the RBI announced guidelines that stopped all my
-recurring donations. I don't (can't) rely on donations anymore, but I'll
-appreciate if you'd like to [donate]({{< ref "donate" >}}).
-
+recurring donations. I don't (can't) rely on donations anymore. [^3]
 
 Overall, I think this transition was successful. I don't depend on proprietary
 software that might limit my ability to compute in a substantial way.
@@ -201,3 +199,4 @@ financially supporting me.
 [^2]: A guix channel is a repository of definitions of software packages. One
   can download pre-built *bit-to-bit identical* binaries from the CI or can
   modify, build, and use the software locally.
+[^3]: Update 2022-09-01: I no longer accept donations.
