@@ -8,8 +8,10 @@ Authy
 Azad
 BSOD
 Barad
+Bercot
 BingeLearning
 CSS
+CertManager
 Chintan
 Cygwin
 DL
@@ -17,6 +19,7 @@ DataCamp
 DataQuest
 Divyesh
 Dixita
+Dockerfile
 DotA2
 EMMS
 ERC
@@ -35,6 +38,7 @@ IPNS
 JetBrains
 Karthik
 Keychain
+Kubernetes
 LaTeX
 LuaSnip
 MPV
@@ -45,6 +49,7 @@ Minecraft
 NN
 NNs
 NetBSD
+NextCloud
 NotFound
 OpenAI
 OpenRC
@@ -101,12 +106,14 @@ args
 autorun
 avahi
 awall
+azad
 azadMaidan
 bulma
 busybox
 bytestructures
 ci
 cis194
+cmdline
 commiters
 conf
 config
@@ -126,6 +133,7 @@ elfeed
 elogind
 emacs
 euler
+execline
 exwm
 flathub
 fluidsynth
@@ -136,8 +144,10 @@ gemini
 git20220302
 gitconfig
 github
+gkapp
 glibc
 gmi
+gnukhata
 gnupg
 gnutls
 gradle
@@ -156,6 +166,7 @@ hyperparameter
 iadd
 icecat
 ifupdown
+impls
 init
 inlinable
 inlining
@@ -176,6 +187,7 @@ linter
 linux
 luasnip
 lzlib
+maidan
 matplotlib
 mbsync
 metadata
@@ -199,13 +211,16 @@ openssh
 otp
 pipewire
 po4a
+posix
 postcss
 postmarketOS
 pre
+proc
 psykose
 psykose's
 purgecss
 py3
+qcow2
 querystring
 rc
 reactos
@@ -218,7 +233,9 @@ s6rc
 sbin
 scikit
 scipy
+scriptosaurust
 seatd
+semver
 soundfont
 sourcehut
 spf13
@@ -231,6 +248,7 @@ stylesheet
 stylesheets
 subdirectory
 subpackage
+swaybar
 swaylock
 swaylockd
 teluguvijayam
@@ -243,6 +261,7 @@ todoman
 traefik
 txt
 ui
+un
 upstreamed
 upstreaming
 v0
@@ -262,3 +281,4 @@ yml
 yubikey
 zitadel
 zlib
+zola
