@@ -67,8 +67,8 @@ contain latest guix checkout. I fixed this issue.
 MIDI protocol involves using many non 8 bit (un)signed integers. For example a
 channel is 4 bit unsigned integer, a note is 7 bit unsigned integer, and a
 pitch bend change is 14 bit signed integer. I've worked on macros that create
-these non 8 bit integers with appropriate impls. I initially used proc-macros
-to Derive certain traits. I realised that I did not need the flexibility they
+these non 8 bit integers with appropriate `impl`s. I initially used proc-macros
+to `Derive` certain traits. I realised that I did not need the flexibility they
 have, so I replaced them with faster and easier (for my use-case) declarative
 macros.
 
@@ -115,8 +115,8 @@ To try it out, I ported my swaybar-status-command script from posix shell
 #### scriptosaurust
 
 I have started porting "quick and dirty" scripts, that ran as processes, to,
-you guessed it, rust. Although, I'll only be porting scripts are stable enough,
-because prototyping stuff is still faster in shell.
+you guessed it, rust. Although, I'll only be porting scripts that are stable
+enough, because prototyping programs is still faster in shell.
 
 ### Conclusion
 
@@ -127,5 +127,7 @@ projects full-time. If you'd like to work on it, feel free to contact me. The
 project uses [Kubernetes](https://kubernetes.io/), [Helm](https://helm.sh/),
 [Traefik](https://traefik.io/), [CertManager](https://cert-manager.io/),
 [Zitadel](https://zitadel.com/), and [NextCloud](https://nextcloud.com/).
+
+Thanks [Dixita](https://dixita.dev) for suggestions/corrections.
 
 Until next post. Peace.
