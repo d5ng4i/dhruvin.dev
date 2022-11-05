@@ -42,6 +42,7 @@ Kubernetes
 LaTeX
 LuaSnip
 MPV
+MSRV
 MacBook
 MacOS
 Maidan
@@ -76,6 +77,7 @@ T12
 T14
 T18
 T20
+TBD
 TensorFlow
 Todos
 VMs
@@ -94,6 +96,7 @@ addons
 aerc
 ai
 alacritty
+alertmanager
 alguix
 alpine's
 apk
@@ -117,8 +120,10 @@ cmdline
 commiters
 conf
 config
+const
 css
 date
+debian
 deeplearning
 dev
 dhruvin
@@ -129,12 +134,14 @@ dotfiles
 doug
 e2ee
 ed25519
+egl
 elfeed
 elogind
 emacs
 euler
 execline
 exwm
+firefox
 flathub
 fluidsynth
 frontend
@@ -178,6 +185,7 @@ json
 jupyter
 keras
 keyserver
+kodi
 lastMod
 libc
 libera
@@ -190,11 +198,13 @@ lzlib
 maidan
 matplotlib
 mbsync
+mcpelauncher
 metadata
 minecraft
 minifying
 minix
 moar
+multilib
 musl
 neovim
 netbsd
@@ -209,6 +219,7 @@ openrc
 openscad
 openssh
 otp
+pipefail
 pipewire
 po4a
 posix
@@ -216,6 +227,7 @@ postcss
 postmarketOS
 pre
 proc
+prometheus
 psykose
 psykose's
 purgecss
@@ -236,6 +248,8 @@ scipy
 scriptosaurust
 seatd
 semver
+sideload
+sideloading
 soundfont
 sourcehut
 spf13
@@ -272,6 +286,8 @@ v4
 v6
 vterm
 wayland
+webextensions
+webexts
 weechat
 whereiseveryone
 wlgreet
