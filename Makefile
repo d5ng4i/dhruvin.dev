@@ -1,4 +1,4 @@
-.PHONY: build clean deps gpg hugo openring package publish spf
+.PHONY: build clean deps gpg hugo openring publish spf
 
 GPG_KEYID=AF931F6B46EE2671AD228A1C72CECACDB63DDDA0
 GPG_KEYPATH=static/public-key.asc
@@ -25,11 +25,8 @@ hugo:
 openring:
 	openring -S webring/webring.txt < webring/webring.html > layouts/partials/webring.html
 
-package:
-	cd public && tar -cvz . > ../site.tar.gz
-
 publish:
-	hut pages publish site.tar.gz --domain dhruvin.dev --not-found /404.html
+	rsync -rv --chown=:nginx public/* dhruvin.dev:/srv/www/dhruvin.dev
 
 spf:
 	uniq < en.utf-8.add | sort -o en.utf-8.add
