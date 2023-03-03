@@ -26,7 +26,7 @@ openring:
 	openring -S webring/webring.txt < webring/webring.html > layouts/partials/webring.html
 
 publish:
-	rsync -rv --chown=:nginx public/* dhruvin.dev:/srv/www/dhruvin.dev
+	rsync -rv public/* dhruvin.dev:/srv/www/dhruvin.dev
 
 spf:
 	uniq < en.utf-8.add | sort -o en.utf-8.add
