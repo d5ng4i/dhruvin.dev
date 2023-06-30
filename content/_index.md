@@ -8,23 +8,16 @@ outputs:
 Hello! I'm Dhruvin (pronounced /ðruwɪn/). I live in Bangalore, India.
 
 ### Work
-I develop and contribute to free, libre, and open source software exclusively.
+I don't.
 
-A significant part of my day goes into research. I am interested in projects
-that require systematic software development.
-
-Contact me via email if you would like to discuss about FLOSS work
-opportunities.
+#### Projects
+I host my projects on [git.dhruvin.dev](https://git.dhruvin.dev).
 
 ### Life
-I am [Dixita](https://dixita.dev)'s husband.
-
-I am an atheist. I believe in equality. I value honesty. I enjoy music.
-
-### Projects
-I host my projects on [sourcehut](https://sr.ht/~dhruvin).
+I am [Dixita](https://dixita.dev)'s husband. I am an atheist, who believes in
+equality, and values honesty.
 
 ### Contact
-You can contact me via [email](mailto:contact@dhruvin.dev),
-[matrix](https://matrix.to/#/@dhruvin:matrix.org), or {{< mastodon >}}.
+You can contact me via [email](mailto:contact@dhruvin.dev), or
+[matrix](https://matrix.to/#/@dhruvin:matrix.org).
 You can locate my [public-key](https://dhruvin.dev/public-key.asc) via WKD.
