@@ -26,7 +26,7 @@ openring:
 	openring -S webring/webring.txt < webring/webring.html > layouts/partials/webring.html
 
 publish:
-	cd public && rsync -avz --delete . dhruvin.dev:/srv/www/dhruvin.dev
+	cd public && rsync --rsync-path=openrsync -av --delete . dhruvin.dev:/var/www/htdocs/dhruvin.dev
 
 spf:
 	uniq < en.utf-8.add | sort -o en.utf-8.add
